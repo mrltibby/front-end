@@ -1,0 +1,63 @@
+<div class="bfiles_container">
+
+  <div class="bfiles_child_container">
+    <mat-progress-bar mode="indeterminate" [hidden]="hide"></mat-progress-bar>
+      <div>
+          <div class="child_div_12" >
+              <table class="tb_title inter_font_b">
+                <tr>
+                  <td>
+                    <img
+                      class="img_folder"
+                      src="../../../assets/images/folder_img.svg"
+                      alt=""
+                    />
+                  </td>
+                  <td>
+                    <p class="fold_title">UPLOAD FILES</p>
+                  </td>
+                </tr>
+              </table>
+      </div>
+      <div class="child_content">
+          <div class="child_div_2">
+               <table>
+                  <tr>
+                    <td>
+                      <p class="inter_font_m">Drag and drop your files here or</p>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                        <input 
+                        class="drag_btn"
+                        type="file"
+                        id="file"
+                        (change)="handleFileInput($event)"
+                        />
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <p class="inter_font_s">
+                        Supported file formats are pdf, docx, rtf
+                      </p>
+                    </td>
+                  </tr>
+
+               </table>
+               
+          </div>
+        </div> 
+        
+         
+        <div class="child_div_3">
+          <button class="convert_btn" mat-raised-button (click)="upload()" accept=".pdf" >CONVERT</button>
+        </div>
+
+
+      </div>
+  </div>
+</div>

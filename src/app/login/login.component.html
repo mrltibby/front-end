@@ -1,0 +1,40 @@
+<div class="component-main">
+  <div class="child_content">
+    
+    <div class="left_side child_div_6">
+      <img
+        src="../../assets/images/newway.png"
+        alt=""
+        class="imgW"
+      />
+      <img class="img imgB" src="/assets/images/B.png" alt="" />
+      <img class="img imgR" src="/assets/images/Rectangle 66.png" alt="" />
+    </div>
+    <div class="component-login child_div_7">
+   
+        <div class="form-box container">
+          <div class="header-text">
+            Get Started
+          </div>
+            <input placeholder="Email Address" type="text" [formControl]="email"> 
+            <input class="inp_pass" placeholder="Password" matInput [type]="hide ? 'password' : 'text'" [formControl]="password"> 
+              <button class="btn_eye"
+                mat-icon-button
+                matSuffix
+                (click)="hide = !hide"
+                [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="hide"
+            > 
+              <mat-icon class="btn_eye">{{ hide ? "visibility_off" : "visibility" }}</mat-icon>  Show Password
+            </button>
+
+            
+
+            <div class="d-flex justify-content-center">
+              <button class="btn_login" mat-flat-button color="warn" (click)="login()">Login</button>
+            </div>
+        </div>
+    
+    </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="bfiles_container">
+
+    <div class="bfiles_child_container">
+        <div>
+            <div class="child_div_12" >
+                <table class="tb_title inter_font_b">
+                  <tr>
+                    <td>
+                      <img
+                        class="img_folder"
+                        src="../../../assets/images/folder_img.svg"
+                        alt=""
+                      />
+                    </td>
+                    <td>
+                      <p class="fold_title">LIST OF CONVERTED FILES</p>
+                    </td>
+                  </tr>
+                </table>
+        </div>
+        <div class="child_content">
+            <div class="child_div_2">
+                <table>
+                    <thead style="position:sticky; top: 0;">
+                      <tr class="tr">
+                        <th scope="col">File Name</th>
+                        <!-- <th scope="col">Date Modified</th>
+                        <th scope="col">Type</th> -->
+                        <th scope="col">Link</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                     
+                      <tr class="tr" *ngFor="let f of files">
+                        <td data-label="File Name">{{f.filename}}</td>
+                        <!-- <td data-label="Date Modified">9/13/2022</td>
+                        <td data-label="Type">PDF</td> -->
+                        <td data-label="Size"><a href="{{f.link}}" target="_blank">Open</a></td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+            </div> 
+        </div>
+    </div>
+</div>

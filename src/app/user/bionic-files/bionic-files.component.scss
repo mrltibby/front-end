@@ -1,0 +1,157 @@
+.bfiles_child_container{
+    height: 322px;
+    width: 730px;
+    left: 27%;
+    margin-top: 3%;
+    position: relative;
+    color: white;
+}
+
+.child_content{
+    background: #312D2D;
+    width: 730px;
+    border-radius: 15px;
+    /* Setup */
+    position: absolute;
+    margin-top: 2%;
+    color: white;
+}
+
+
+.inter_font_b{
+    font-size: 40px;
+  }
+  
+.inter_font_m{
+    font-size: 24px;
+    margin-left: 20%;
+
+    margin-bottom: 0%;
+  }
+  
+.inter_font_s{
+    font-size: 16px;
+    margin-left: 25%;
+  }
+
+.row {
+  margin-left:-5px;
+  margin-right:-5px;
+  
+}
+  
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+//   border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+  
+}
+thead{
+    border-radius: 15px
+}
+thead:first-child {
+  background-color: #F37C0E;
+  
+}
+  
+  @media screen and (max-width: 600px) {
+    .bfiles_child_container{
+      height: 161px;
+      width: 365px;
+      left: 10%;
+      margin-top: 3%;
+      position: relative;
+      color: white;
+  }
+    
+    .child_content{
+        background: #312D2D;
+        width: 365px;
+        border-radius: 15px;
+        /* Setup */
+        position: absolute;
+        margin-top: 2%;
+        color: white;
+    }
+    
+    
+    .inter_font_b{
+        font-size: 20px;
+      }
+      
+    .inter_font_m{
+        font-size: 14;
+        margin-left: 20%;
+    
+        margin-bottom: 0%;
+      }
+      
+    .inter_font_s{
+        font-size: 12px;
+        margin-left: 25%;
+      }
+    
+    .row {
+      margin-left:-5px;
+      margin-right:-5px;
+      
+    }
+      
+    .column {
+      float: left;
+      width: 50%;
+      padding: 5px;
+    }
+    
+    
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+    //   border: 1px solid #ddd;
+    }
+    
+    th, td {
+      text-align: left;
+      padding: 16px;
+      
+    }
+    thead{
+        border-radius: 15px
+    }
+    thead:first-child {
+      background-color: #F37C0E;
+      
+    }
+    .img_folder{
+      height: 40px;
+      width: 50px;
+    }
+  }

@@ -1,0 +1,154 @@
+//LOGIN
+  .component-login{
+    width: 400px;
+    height: 600px;
+  }
+  
+  .child_div_7{
+    /*Float Left*/
+    float: right;
+    margin-right: 8%;
+    margin-top: 4%;
+  }
+  
+  .child_div_6{
+   
+    /*Float Left*/
+    float: left;
+    margin-left: 8%;
+    margin-top: 3%; 
+  }
+  
+  .img {
+    position: absolute;
+  }
+  .imgR{
+    z-index: 1;
+    top: 40%;
+    left: 15%;
+  }
+  
+  .imgB{
+    z-index: 3;
+    top: 50%;
+    left: 8%;
+  }
+
+  
+  .mat-icon-button {
+    color: black !important;
+  }
+  .mat-icon{
+    color: black !important;
+  }
+  
+  
+  
+//LOGIN FORM
+  .form-box {
+    background: rgba(255, 255, 251, 0.24);
+    border-radius: 98px;
+    padding: 40px;
+    box-shadow: 0 0 1px  rgba(250, 178, 83, 0.24);
+    width: 400px;
+    height: 514px;
+  }
+
+  .form-box .header-text {
+
+    padding-bottom: 30px;
+    text-align: left;
+    margin-top: 25%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    text-indent: 15px;
+
+    color: #FFFFFF;
+  }
+  .form-box input {
+    height: 50px;
+    width: 100%;
+    
+    margin: 10px 0px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+
+    font-family: 'Inter';
+    font-style: normal;
+  }
+  .form-box input[type=checkbox] {
+    display: none;
+  }
+ 
+  .form-box label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #ddd;
+  }
+  .form-box input[type=checkbox]:checked+label:before {
+    content: "\2713";
+    font-size: 20px;
+
+    text-align: center;
+    line-height: 20px;
+  }
+  .form-box span {
+    font-size: 14px;
+  }
+  .form-box .btn_login {
+    background-color: #F37C0E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 152.31px;
+    height: 55px;
+    padding: 10px;
+    margin: 20px 0px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 18px;
+  }
+  span a {
+    color: #BBB;
+  }
+  
+  ::placeholder{
+    color:#1F1D1D;
+  }
+
+  .btn_eye{
+    color: white !important;
+  }
+
+  .inp_pass{
+    height: 50px !important;
+  }
+
+  @media screen and (max-width: 600px) { 
+     
+  .child_div_7{
+    /*Float Left*/
+    float: right;
+    margin-right: 8%;
+    margin-top: 30%;
+  }
+  
+  
+  }
