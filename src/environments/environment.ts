@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  backendAPI: "https://localhost:7148"
+  //backendAPI: "https://localhost:7148"
+  backendAPI: "https://bionic-backend.herokuapp.com"
 };
 
 // For PDF TO HTML

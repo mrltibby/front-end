@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  backendAPI: "https://bionic-backend.herokuapp.com/"
+  backendAPI: "https://bionic-backend.herokuapp.com"
 };
