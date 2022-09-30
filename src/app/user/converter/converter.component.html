@@ -46,6 +46,8 @@
                       </p>
                     </td>
                   </tr>
+                 
+                  
 
                </table>
                
@@ -54,8 +56,13 @@
         
          
         <div class="child_div_3">
-          <button class="convert_btn" mat-raised-button (click)="upload()" accept=".pdf" >CONVERT</button>
+          <button class="convert_btn" [hidden]="!openURLHide" mat-raised-button (click)="upload()" >CONVERT</button>
+          <br>
+          <br>
+          <button class="convert_btn" *ngIf="openURL" mat-raised-button (click)="openLink()" >OPEN CONVERTED</button>
         </div>
+      
+        <!--  -->
 
 
       </div>

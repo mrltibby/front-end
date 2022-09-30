@@ -22,6 +22,8 @@ import { CompleteDialogComponent } from '../complete-dialog/complete-dialog.comp
 })
 export class ConverterComponent implements OnInit {
   hide = true;
+  openURL: string | null = null;
+  openURLHide = true;
   id: Guid | null = null;
   fileToUpload: File | null = null;
   selectedFiles?: FileList;
@@ -39,7 +41,7 @@ export class ConverterComponent implements OnInit {
       avatar: [null],
     });
   }
-  ngOnInit() {}
+  ngOnInit() { }
 
   handleFileInput(event: any) {
     this.selectedFiles = event.target.files[0];
@@ -108,7 +110,9 @@ export class ConverterComponent implements OnInit {
             console.log('File available at', downloadURL);
             this.pdfToHTML(downloadURL);
           });
+          this.hide = true;
         }
+
       );
     }
   }
@@ -123,24 +127,30 @@ export class ConverterComponent implements OnInit {
       .subscribe((data) => {
         console.log(data);
         this.htmltoBionic(data[0]);
-        this.hide = true;
-        
+   
+
         const dialogRef = this.dialog.open(CompleteDialogComponent);
 
         dialogRef.afterClosed().subscribe((result) => {
           console.log(`Dialog result: ${result}`);
         });
       });
+
   }
 
   htmltoBionic(downloadURL: string) {
     var path =
       environment.backendAPI + '/api/BionicConverter?url=' + downloadURL;
     this.http.post<any>(path, {}).subscribe((data) => {
-      console.log(data);
+      console.log(data[0]);
       //this.htmltoBionic(data[0]);
+      this.openURL = data[0];
       this.hide = true;
     });
+  }
+
+  openLink() {
+    window.open(this.openURL+"", "_blank");
   }
 }
 
